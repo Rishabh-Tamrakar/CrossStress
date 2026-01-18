@@ -2,6 +2,8 @@
 
 CrossStress is a lightweight, production-ready system stress testing tool for validating system stability and capacity. It stresses CPU, memory, and network resources with configurable intensity and duration across Linux and Windows systems.
 
+**Quick Links:** [Installation](#installation) | [Usage](#usage) | [Architecture](ARCHITECTURE.md) | [License](LICENSE)
+
 ## What is CrossStress
 
 CrossStress provides a simple command-line interface to stress test system components. Whether you need to validate hardware performance, test system stability under load, or simulate peak usage conditions, CrossStress delivers predictable, controllable stress with minimal dependencies.
@@ -188,6 +190,20 @@ If memory stress test fails to allocate requested memory, the system may not hav
 If network stress test reports errors, the system may not have internet connectivity. Network tests work best with stable internet connection.
 
 If CPU stress test uses less than expected CPU, the system may have thermal throttling enabled. Disable power saving and thermal throttling in BIOS if you need full stress testing.
+
+## Architecture and Implementation
+
+For developers interested in understanding how CrossStress works internally, refer to ARCHITECTURE.md. This document covers:
+
+Script logic and implementation for CPU, memory, and network stress tests
+
+How intensity and duration parameters are mapped to resource consumption
+
+Design principles ensuring production readiness and safety
+
+Performance characteristics of each stress test type
+
+Troubleshooting guide for common issues
 
 ## License
 
