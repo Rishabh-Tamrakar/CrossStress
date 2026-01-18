@@ -189,6 +189,20 @@ If network stress test reports errors, the system may not have internet connecti
 
 If CPU stress test uses less than expected CPU, the system may have thermal throttling enabled. Disable power saving and thermal throttling in BIOS if you need full stress testing.
 
+## Architecture and Implementation
+
+For developers interested in understanding how CrossStress works internally, refer to ARCHITECTURE.md. This document covers:
+
+Script logic and implementation for CPU, memory, and network stress tests
+
+How intensity and duration parameters are mapped to resource consumption
+
+Design principles ensuring production readiness and safety
+
+Performance characteristics of each stress test type
+
+Troubleshooting guide for common issues
+
 ## License
 
 CrossStress is released under the MIT License. See LICENSE file for details.
